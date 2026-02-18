@@ -1,6 +1,9 @@
 ﻿services:
   etlproject:
+    user: root
     image: etlproject.consoleapp
+    volumes:
+    - ./data:/app/data
     build:
       context: .
       dockerfile: ETLProject.ConsoleApp/Dockerfile

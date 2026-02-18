@@ -20,6 +20,16 @@
     </ItemGroup>
 
     <ItemGroup>
+        <None Update="appsettings.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="data\sample-cab-data.csv">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+    
+    
+    <ItemGroup>
       <ProjectReference Include="..\ETLProject.Application\ETLProject.Application.csproj" />
       <ProjectReference Include="..\ETLProject.Domain\ETLProject.Domain.csproj" />
       <ProjectReference Include="..\ETLProject.Infrastructure\ETLProject.Infrastructure.csproj" />

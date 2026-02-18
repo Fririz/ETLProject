@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\ETLProject.Domain\ETLProject.Domain.csproj" />
       <ProjectReference Include="..\ETLProject.Domain\ETLProject.Domain.csproj" />
     </ItemGroup>
 
