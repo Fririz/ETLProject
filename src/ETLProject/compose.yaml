@@ -15,7 +15,7 @@
     container_name: sql_server_container
     environment:
       - ACCEPT_EULA=Y
-      - MSSQL_PASSWORD=${MSSQL_PASSWORD}
+      - MSSQL_SA_PASSWORD=${MSSQL_PASSWORD}
     ports:
       - "${SQL_PORT}:1433"
     volumes:
