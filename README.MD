@@ -15,16 +15,18 @@ DB_NAME=EtlDb
 SQL_PORT=1433
 ```
 2. Start the database
+```
 docker-compose up -d db
-
+```
 3. Connect to Database (at localhost:{SQL_PORT}) and execute scripts from src/ETLProject/Sql:
 
 4. Place your input .csv file in src/ETLProject/data/.
 Note: If the filename differs from the default, update it in appsettings.json.
 
 5. Run program
+```
 docker-compose run etlproject
-
+```
 6. Check result(all scripts for checking at /src/ETLProject/Sql/TestSqlQueries.sql)
 
 
@@ -50,6 +52,6 @@ The current implementation stores all unique keys in RAM using a HashSet. For a 
 ## Testing
 The project includes Unit Tests
 Run tests using:
-
+```
 dotnet test
-
+```
