@@ -20,6 +20,5 @@
       - "${SQL_PORT}:1433"
     volumes:
       - mssql_data:/var/opt/mssql
-      - 
 volumes:
   mssql_data:
