@@ -1,0 +1,39 @@
+## --- Build & Debug ---
+[Bb]in/
+[Oo]bj/
+/out/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## --- JetBrains Rider / IntelliJ ---
+.idea/
+*.sln.dotSettings.user
+*.resharper.user
+.vs/
+
+## --- .NET Core / ASP.NET ---
+project.lock.json
+project.fragment.lock.json
+artifacts/
+var/
+
+## --- Environment & Secrets (Security) ---
+# Никогда не комить файлы с ключами и паролями!
+.env
+appsettings.Development.json
+appsettings.Local.json
+*.pfx
+*.kdbx
+
+## --- OS Specific (Linux / Mac / Windows) ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+
+## --- Logs ---
+*.log
+logs/
