@@ -1,13 +1,25 @@
 ﻿services:
-  etlproject.consoleapp:
+  etlproject:
     image: etlproject.consoleapp
     build:
       context: .
       dockerfile: ETLProject.ConsoleApp/Dockerfile
+    depends_on:
+      db:
+        condition: service_started
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Database=${DB_NAME};User Id=sa;Password=${MSSQL_PASSWORD};TrustServerCertificate=True;
 
-  consoleapp1:
-    image: consoleapp1
-    build:
-      context: .
-      dockerfile: ETLProject.Infrastructure/ConsoleApp1/Dockerfile
-
+  db:
+    image: mcr.microsoft.com/mssql/server:2025-latest
+    container_name: sql_server_container
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
+    ports:
+      - "${SQL_PORT}:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+      - 
+volumes:
+  mssql_data:
