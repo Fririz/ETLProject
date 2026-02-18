@@ -124,6 +124,7 @@ public class EtlService : IEtlService
     
     private DateTime ConvertToUtc(DateTime estTime)
     {
-        return TimeZoneInfo.ConvertTimeToUtc(estTime, _estTimeZone);
+        var unspecifiedTime = DateTime.SpecifyKind(estTime, DateTimeKind.Unspecified);
+        return TimeZoneInfo.ConvertTimeToUtc(unspecifiedTime, _estTimeZone);
     }
 }
