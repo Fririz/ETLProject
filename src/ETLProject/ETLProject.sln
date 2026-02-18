@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETLProject.Domain", "ETLPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests\Tests.csproj", "{A64DFEDE-DC5A-4BC7-9338-88325A2E737D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETLProject.Application", "ETLProject.Application\ETLProject.Application\ETLProject.Application.csproj", "{BBBF0E82-DF24-4282-AC52-F454F9F5F608}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{A64DFEDE-DC5A-4BC7-9338-88325A2E737D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A64DFEDE-DC5A-4BC7-9338-88325A2E737D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A64DFEDE-DC5A-4BC7-9338-88325A2E737D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBBF0E82-DF24-4282-AC52-F454F9F5F608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBF0E82-DF24-4282-AC52-F454F9F5F608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBBF0E82-DF24-4282-AC52-F454F9F5F608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBBF0E82-DF24-4282-AC52-F454F9F5F608}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
