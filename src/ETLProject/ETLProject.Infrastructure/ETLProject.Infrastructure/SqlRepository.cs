@@ -15,7 +15,7 @@ public class SqlRepository : ISqlRepository
         _connectionString = connectionString;
     }
 
-    public async Task BulkInsertTripsAsync(IEnumerable<CsvModel> trips)
+    public async Task BulkInsertTripsAsync(IEnumerable<DbModel> trips)
     {
         var table = new DataTable();
         table.Columns.Add("PickupDatetime", typeof(DateTime));

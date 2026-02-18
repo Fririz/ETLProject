@@ -4,5 +4,5 @@ namespace ETLProject.Domain.Interfaces;
 
 public interface ISqlRepository
 {
-    Task BulkInsertTripsAsync(IEnumerable<CsvModel> trips);
+    Task BulkInsertTripsAsync(IEnumerable<DbModel> trips);
 }
