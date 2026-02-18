@@ -1,6 +1,6 @@
 namespace ETLProject.Domain.Interfaces;
 
-public interface IETLService
+public interface IEtlService
 {
     
 }
