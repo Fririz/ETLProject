@@ -1,0 +1,13 @@
+﻿services:
+  etlproject.consoleapp:
+    image: etlproject.consoleapp
+    build:
+      context: .
+      dockerfile: ETLProject.ConsoleApp/Dockerfile
+
+  consoleapp1:
+    image: consoleapp1
+    build:
+      context: .
+      dockerfile: ETLProject.Infrastructure/ConsoleApp1/Dockerfile
+
