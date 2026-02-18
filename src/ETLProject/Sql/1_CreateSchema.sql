@@ -1,5 +1,14 @@
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'EtlDb')
+BEGIN
+    CREATE DATABASE EtlDb;
+END
+GO
+
+USE EtlDb;
+GO
+
 IF OBJECT_ID('dbo.Trips', 'U') IS NOT NULL
-DROP TABLE dbo.Trips;
+    DROP TABLE dbo.Trips;
 GO
 
 CREATE TABLE Trips (
@@ -13,7 +22,8 @@ CREATE TABLE Trips (
     DOLocationID INT,
     fare_amount DECIMAL(10, 2),
     tip_amount DECIMAL(10, 2),
-    --To "find faster top 100 longest fares in terms of time spent traveling"
-    TripDurationSeconds AS DATEDIFF(second, tpep_pickup_datetime, tpep_dropoff_datetime)
+    
+--To "find faster top 100 longest fares in terms of time spent traveling" 
+    TripDurationSeconds AS DATEDIFF(second, tpep_pickup_datetime, tpep_dropoff_datetime) PERSISTED
 );
 GO
