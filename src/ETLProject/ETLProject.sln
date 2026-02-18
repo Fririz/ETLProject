@@ -8,13 +8,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.env = .env
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETLProject.Infrastructure", "ETLProject.Infrastructure\ETLProject.Infrastructure\ETLProject.Infrastructure.csproj", "{DECFF935-698C-4270-8868-C9661E0C892C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETLProject.Infrastructure", "ETLProject.Infrastructure\ETLProject.Infrastructure.csproj", "{DECFF935-698C-4270-8868-C9661E0C892C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETLProject.Domain", "ETLProject.Domain\ETLProject.Domain\ETLProject.Domain.csproj", "{1BD14870-377B-40A3-AD0E-75DD046079E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETLProject.Domain", "ETLProject.Domain\ETLProject.Domain.csproj", "{1BD14870-377B-40A3-AD0E-75DD046079E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests\Tests.csproj", "{A64DFEDE-DC5A-4BC7-9338-88325A2E737D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETLProject.Application", "ETLProject.Application\ETLProject.Application\ETLProject.Application.csproj", "{BBBF0E82-DF24-4282-AC52-F454F9F5F608}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETLProject.Application", "ETLProject.Application\ETLProject.Application.csproj", "{BBBF0E82-DF24-4282-AC52-F454F9F5F608}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
